@@ -13,13 +13,13 @@ The original Follicular-Cell Patch Dataset can be downloaded from the google dri
 <br>
 
 <b>Download Tiled-ImageMask-Dataset</b><br>
-You can download our datasets from the google drive:<br>
+You can download our dataset from the google drive:<br>
 <a href="https://drive.google.com/file/d/1Muvzh0nzaqhYvYF1iUwfHGSGIXq0bQG3/view?usp=sharing">
 Tiled-Follicular-Cell-ImageMask-Dataset.zip</a>
 <br>
 <br>
 <b>Download Tiled-ImageMask-Dataset V2</b><br>
-You can download our datasets from the google drive:<br>
+You can download our dataset from the google drive:<br>
 <a href="https://drive.google.com/file/d/1ISpL9l-Dv8k93BrqGb0V0vaab9TrQP5U/view?usp=sharing">
 Tiled-Follicular-Cell-ImageMask-Dataset-V2.zip</a>, which was derived from training_set only wthout testing set.
 <br>
