@@ -248,7 +248,7 @@ Please run the following command for Python script <a href="./split_train_tiled_
 split_train_tiled_master.py
 </a><br>
 <pre>
-python split_tiled_master.py
+python split_train_tiled_master.py
 </pre>
 This command generates Tiled-Follicular-Cell-ImageMask-Dataset-V2.<br>
 <pre>
