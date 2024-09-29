@@ -21,7 +21,7 @@ Tiled-Follicular-Cell-ImageMask-Dataset.zip</a>
 <b>Download Tiled-ImageMask-Dataset V2</b><br>
 You can download our datasets from the google drive:<br>
 <a href="https://drive.google.com/file/d/1ISpL9l-Dv8k93BrqGb0V0vaab9TrQP5U/view?usp=sharing">
-Tiled-Follicular-Cell-ImageMask-Dataset-V2.zip</a>, which was derived from training_set only wthou testing set.
+Tiled-Follicular-Cell-ImageMask-Dataset-V2.zip</a>, which was derived from training_set only wthout testing set.
 <br>
 Probably, this dataset is more suitable for a real train-eval process of a segmentation model.
 <br>
