@@ -1,5 +1,9 @@
-<h2>Tiled-ImageMask-Dataset-Follicular-Cell (2024/09/29)</h2>
-
+<h2>Tiled-ImageMask-Dataset-Follicular-Cell (Updated:2024/09/29)</h2>
+<li>
+2024/09/29: Added <a href="https://drive.google.com/file/d/1ISpL9l-Dv8k93BrqGb0V0vaab9TrQP5U/view?usp=sharing">
+Tiled-Follicular-Cell-ImageMask-Dataset-V2.zip</a>
+</li>
+<br>
 This is Tiled ImageMask Dataset for Follicular-Cell<a href="https://github.com/bupt-ai-cz/Hybrid-Model-Enabling-Highly-Efficient-Follicular-Segmentation">
 Hybrid-Model-Enabling-Highly-Efficient-Follicular-Segmentation</a>
 <br>
@@ -13,7 +17,13 @@ You can download our datasets from the google drive:<br>
 <a href="https://drive.google.com/file/d/1Muvzh0nzaqhYvYF1iUwfHGSGIXq0bQG3/view?usp=sharing">
 Tiled-Follicular-Cell-ImageMask-Dataset.zip</a>
 <br>
-
+<br>
+<b>Download Tiled-ImageMask-Dataset V2</b><br>
+You can download our datasets from the google drive:<br>
+<a href="https://drive.google.com/file/d/1ISpL9l-Dv8k93BrqGb0V0vaab9TrQP5U/view?usp=sharing">
+Tiled-Follicular-Cell-ImageMask-Dataset-V2.zip</a>, which was derived from training_set only wthou testing set.
+<br>
+Probably, this dataset will more suitable for a real train-eval process of a segmentation model.
 <br>
 
 <h3>1. Dataset Citation</h3>
@@ -190,7 +200,7 @@ split_tiled_master.py
 <pre>
 python split_tiled_master.py
 </pre>
-This command generates Tiled-BCNB-ImageMask-Dataset.<br>
+This command generates Tiled-Follicular-Cell-ImageMask-Dataset.<br>
 <pre>
 ./Tiled-Follicular-Cell-ImageMask-Dataset
 ├─test
@@ -213,6 +223,56 @@ This command generates Tiled-BCNB-ImageMask-Dataset.<br>
 
 <b>Tiled-Follicular-Cell-ImageMask-Dataset Statistics</b><br>
 <img src="./Tiled-Follicular-Cell-ImageMask-Dataset_Statistics.png" width="480" height="auto"><br>
+
+<h3>5. Generate tiled dataset from training_set only</h3>
+Please run the following command for Python script <a href="./TrainTiledImageMaskDatasetGenerator.py">
+TrainTiledImageMaskDatasetGenerator.py
+</a><br>
+<pre>
+python TrainTiledImageMaskDatasetGenerator.py
+</pre>
+
+This command generates tiledly-splitted 512x512 image and mask files, and size-reduced 512x512 image and mask files 
+from <b>lvpao</b> in data and label_transfered of training set only.<br><br>
+<pre>
+./Train-Tiled-Follicular-Cell-master
+├─images
+└─masks
+</pre>
+
+</pre>
+
+
+<h3>6. Split train tiled dataset</h3>
+Please run the following command for Python script <a href="./split_train_tiled_master.py">
+split_train_tiled_master.py
+</a><br>
+<pre>
+python split_tiled_master.py
+</pre>
+This command generates Tiled-Follicular-Cell-ImageMask-Dataset-V2.<br>
+<pre>
+./Tiled-Follicular-Cell-ImageMask-Dataset-V2
+├─test
+│  ├─images
+│  └─masks
+├─train
+│  ├─images
+│  └─masks
+└─valid
+    ├─images
+    └─masks
+</pre>
+<hr>
+<b>train images: </b><br>
+<img src="./asset/train_images_sample_v2.png"  width="1024" height="auto">
+<br>
+<b>train masks: </b><br>
+<img src="./asset/train_masks_sample_v2.png"  width="1024" height="auto">
+<hr>
+
+<b>Tiled-Follicular-Cell-ImageMask-V2-Dataset Statistics</b><br>
+<img src="./Tiled-Follicular-Cell-ImageMask-Dataset-V2_Statistics.png" width="480" height="auto"><br>
 
 <br>
 <h3>Reference</h3>

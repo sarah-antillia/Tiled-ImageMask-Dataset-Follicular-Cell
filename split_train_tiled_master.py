@@ -25,7 +25,7 @@
 # into test, train and valid dataset.
 
 """
-./Tiled-Follicular-Cell-ImageMask-Dataset
+./Tiled-Follicular-Cell-ImageMask-Dataset-V2
 ├─test
 │  ├─images
 │  └─masks
@@ -92,7 +92,7 @@ if __name__ == "__main__":
   try:
     images_dir = "./Train-Tiled-Follicular-Cell-master/images/"
     masks_dir  = "./Train-Tiled-Follicular-Cell-master/masks/"
-    output_dir = "./Tiled-Follicular-Cell-masterImageMask-Dataset/"
+    output_dir = "./Tiled-Follicular-Cell-ImageMask-Dataset-V2/"
     if os.path.exists(output_dir):
       shutil.rmtree(output_dir)
     if not os.path.exists(output_dir):
