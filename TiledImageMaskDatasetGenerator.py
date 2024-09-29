@@ -467,9 +467,13 @@ if __name__ == "__main__":
     output_masks_dir  = train_output_dir + "/masks/"
     os.makedirs(output_images_dir)
     os.makedirs(output_masks_dir)
-      
+
+    # You may set augmentation parameter to be True.      
+    #augmentation = True
+    augmentation = False
+
     generator = TiledImageMaskDatasetGenerator(exclude_empty_mask=True,
-              augmentation=False)
+              augmentation=augmentation)
   
     generator.generate(train_images_dir, train_masks_dir, 
                         output_images_dir, output_masks_dir)
@@ -486,7 +490,7 @@ if __name__ == "__main__":
     os.makedirs(output_masks_dir)
       
     generator = TiledImageMaskDatasetGenerator(exclude_empty_mask=True,
-              augmentation=False)
+              augmentation=augmentation)
     generator.generate(test_images_dir, test_masks_dir, 
                         output_images_dir, output_masks_dir)
     
