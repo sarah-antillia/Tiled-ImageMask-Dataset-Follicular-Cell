@@ -94,7 +94,7 @@ from <b>lvpao</b> in data and label_transfered of testing set and training set.<
 
 </pre>
 
-For example, an image and mask files can be split into four 512x512 tiles respectively as shown below:<br>
+For example, an image and mask files can be split into four tiles of 512x512 pixels respectively as shown below:<br>
 <hr>
 <table>
 <tr>
