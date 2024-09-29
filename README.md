@@ -164,7 +164,24 @@ Splitted masks
 </table>
  
 <hr>
+If you would like to generate a pre-augmented tiled dataset, you may set augmentation parameter to be True
+in TiledImageMaskDatasetGenerator.py as shown below;<br>
+<pre>
+if __name__ == "__main__":
+  try:
+    #...
 
+    # You may set augmentation parameter to be True.      
+    augmentation = True
+    #augmentation = False
+    
+    generator = TiledImageMaskDatasetGenerator(exclude_empty_mask=True,
+              augmentation=augmentation)
+
+    #...
+</pre>
+
+<br>
 
 <h3>4. Split tiled dataset</h3>
 Please run the following command for Python script <a href="./split_tiled_master.py">
