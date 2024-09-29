@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# 2024/09/27
+Tiled-Follicular-Cell-ImageMask-Dataset/
+Tiled-Follicular-Cell-master/
+patch dataset/
+Tiled-Follicular-Cell-ImageMask-Dataset.zip
+
 # Distribution / packaging
 .Python
 build/
